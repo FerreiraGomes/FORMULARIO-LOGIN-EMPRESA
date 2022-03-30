@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="formempresa.css" media="screen" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <main>
+        <img class="img" src="Marca-logo.png" alt="Brasal">
+        <form class="form">
+            <div class="titulo">
+                <h1 id="Titulo">Trabalhe conosco</h1>
+            </div>
+            <div class="subtitulo">
+                <p>Complete as suas informações</p>
+            </div>
+            <fieldset class="grupo">
+                <div class="nome">
+                    <label for="nome"><strong class="nm1">Nome:</strong></label>
+                    <input type="text" nome="nome" id="nome" required>
+                    <input type="text" nome="sobrenome" id="Sobrenome" required>
+                </div>
+                <div class="email">
+                    <label for="email"><strong>E-mail:</strong></label>
+                    <input type="email" nome="email" id="email" required>
+                </div>
+                <div class="Telefone">
+                    <label for="Telefone"><strong>Contato:</strong></label>
+                    <input type="Telefone" nome="Telefone" id="Telefone" required>
+                </div>
+            </fieldset>
+            <div class="campo">
+                <label for="estado"><strong>Estado</strong></label>
+                <select id="estado">
+                    <option selected disabled value="">Selecione</option>
+                    <option>Brasília-DF</option>
+                    <option>São Paulo</option>
+                    <option>Rio De Janeiro</option>
+                    <option>Tocatins</option>
+                    <option>Belo Horizonte</option>
+                    <option>Bahia</option>
+                    <option>Mato Grosso</option>
+                    <option>Amapá</option>
+                    <option>Paraíba</option>
+                    <option>Acre</option>
+                    <option>Pernambuco</option>
+                </select>
+            </div>
+            <div class="genero">
+                <label><strong>Gênero</strong></label>
+                <select id="genero">
+                    <option selected disabled value="">Selecione</option>
+                    <option>Masculino</option>
+                    <option>Feminino</option>
+                </select>
+            </div>
+            <fieldset id="grupo">
+                <div class="campo">
+                    <div class="area">
+                        <label><strong>Área de atuação</strong></label>
+                    </div>
+                    <input type="checkbox" id="adm" nome="adm" volue="Administrativo">
+                    <label for="adm">Administrativo</label>
+                    <input type="checkbox" id="op" nome="op" volue="Operacional">
+                    <label for="op">Operacional</label>
+                    <input type="checkbox" id="ds" nome="ds" volue="Design">
+                    <label for="ds">Design</label>
+                    <input type="checkbox" id="ag" nome="ag" volue="Auxiliar">
+                    <label for="ag">Auxiliar Geral</label>
+                    <input type="checkbox" id="cm" nome="cm" volue="Comercial">
+                    <label for="cm">Comercial</label>
+                    <input type="checkbox" id="tp" nome="tp" volue="Transportes">
+                    <label for="tp">Transportes</label>
+                </div>
+            </fieldset>
+
+            <div class="text">
+                <label><strong>Conte um pouco mais das suas experiências</strong></label>
+            </div>
+            <div class="texto">
+                <textarea id="experiência" name="experiência"></textarea>
+            </div>
+
+            <button class="botao" type="submit">Concluído</button>
+
+
+        </form>
+    </main>
+</body>
+
+</html>
